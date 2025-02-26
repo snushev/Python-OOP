@@ -21,12 +21,12 @@ class Time:
         if self.seconds > Time.max_seconds:
             self.seconds = 0
             self.minutes += 1
-            if self.minutes > Time.max_minutes:
-                self.minutes = 0
-                self.hours += 1
-                if self.hours > Time.max_hours:
-                    self.hours = 0
+        if self.minutes > Time.max_minutes:
+            self.minutes = 0
+            self.hours += 1
+        if self.hours > Time.max_hours:
+            self.hours = 0
         return self.get_time()
 
-time = Time(23, 59, 59)
+time = Time(14, 13, 62)
 print(time.next_second())
