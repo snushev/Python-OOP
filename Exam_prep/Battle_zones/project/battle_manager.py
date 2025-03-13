@@ -103,7 +103,7 @@ class BattleManager:
 
     def get_statistics(self):
         not_participating = [x.name for x in self.ships if x.is_available]
-        sorted_zones = sorted(self.zones, key=lambda x: x.code)  ##########
+        sorted_zones = sorted(self.zones, key=lambda x: x.code)
         result = [f"Available Battleships: {len(not_participating)}"]
         if not_participating:
             result.append(f"#{', '.join(not_participating)}#")

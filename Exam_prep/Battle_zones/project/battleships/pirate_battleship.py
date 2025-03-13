@@ -9,6 +9,4 @@ class PirateBattleship(BaseBattleship):
         self.type = "Pirate"
 
     def attack(self):
-        self.ammunition -= self.SHOOT
-        if self.ammunition < 0:
-            self.ammunition = 0
+        self.ammunition = max(self.ammunition - self.SHOOT, 0)

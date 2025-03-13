@@ -23,7 +23,7 @@ class BaseZone(ABC):
 
     def get_ships(self):
         sorted_ships = sorted(self.ships, key=lambda x: (-x.hit_strength, x.name))
-        return [x.name for x in sorted_ships]
+        return sorted_ships
 
     @abstractmethod
     def zone_info(self):
