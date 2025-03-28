@@ -1,0 +1,2 @@
+def robot():
+    return None

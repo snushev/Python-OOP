@@ -21,8 +21,8 @@ def solution():
 
     return (take, halves, integers)
 
-# test zero
-# test zero
+# project zero
+# project zero
 import unittest
 
 class TakeHalvesTests(unittest.TestCase):
